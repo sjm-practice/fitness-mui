@@ -1,11 +1,14 @@
-import React from "react";
-import NavBar from "./components/NavBar";
+import React, { Component } from "react";
+import "typeface-roboto";
 
 // App component - represents the whole app
-const App = () => (
-  <div>
-    <NavBar />
-  </div>
-);
+export default class App extends Component {
+  state = {
+    exercises: [],
+    title: "",
+  };
 
-export default App;
+  render() {
+    return <h1>Exercises</h1>;
+  }
+}

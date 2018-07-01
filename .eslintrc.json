@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "plugins": ["meteor", "react"],
   "extends": ["airbnb", "plugin:meteor/recommended", "plugin:react/recommended"],
   "env": {
