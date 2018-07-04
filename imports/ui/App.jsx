@@ -14,10 +14,10 @@ import { Delete } from "@material-ui/icons";
 import { withStyles } from "@material-ui/core/styles";
 import "typeface-roboto";
 
-const styles = {
+const styles = ({ spacing: { unit } }) => ({
   root: {
-    margin: 20,
-    padding: 20,
+    margin: unit,
+    padding: unit * 3,
     maxWidth: 400,
   },
   form: {
@@ -25,7 +25,7 @@ const styles = {
     alignItems: "baseline",
     justifyContent: "space-evenly",
   },
-};
+});
 
 // App component - represents the whole app
 export default withStyles(styles)(
